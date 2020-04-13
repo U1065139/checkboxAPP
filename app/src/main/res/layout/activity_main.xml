@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txvShow"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -29,58 +29,59 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:text="TextView"
+        android:text="我喜歡的歌手有"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chkMina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="CheckBox"
+        android:text="Mina"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/chkSana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
-        android:text="CheckBox"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        android:text="Sana"
+        app:layout_constraintStart_toEndOf="@+id/chkMina"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/chkMomo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="CheckBox"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        android:text="Momo"
+        app:layout_constraintStart_toStartOf="@+id/chkMina"
+        app:layout_constraintTop_toBottomOf="@+id/chkMina" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/chkTzuyu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
-        android:text="CheckBox"
-        app:layout_constraintStart_toEndOf="@+id/checkBox3"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        android:text="Tzuyu"
+        app:layout_constraintStart_toEndOf="@+id/chkMomo"
+        app:layout_constraintTop_toBottomOf="@+id/chkSana" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="@+id/checkBox3"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+        android:onClick="btnok"
+        android:text="送出"
+        app:layout_constraintStart_toStartOf="@+id/chkMomo"
+        app:layout_constraintTop_toBottomOf="@+id/chkMomo" />
 
 </android.support.constraint.ConstraintLayout>
